@@ -82,7 +82,7 @@ const UserDropdown = () => {
     <StyledDropdown isOpen={dropdownOpen} hideArrow>
       <StyledSmallUserImage
         slot="button"
-        src={authentication.profile.picture}
+        src={authentication.photo}
         fallbackSrc="/img/user.png"
         alt="User"
         width={25}
@@ -92,7 +92,7 @@ const UserDropdown = () => {
       <div slot="menu" className='header-submenu'>
         <UserHeader className="bg-primary">
           <StyledBigUserImage
-            src={authentication.profile.picture}
+            src={authentication.photo}
             fallbackSrc="/img/user.png"
             alt="User"
             width={90}
@@ -100,7 +100,7 @@ const UserDropdown = () => {
             rounded
           />
           <p>
-            {authentication.profile.login}
+          {authentication.login}
             <small>
               <span>Member since </span>
               <span>
